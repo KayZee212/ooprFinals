@@ -9,7 +9,7 @@ public class votingSystem {
     private Panel home;
 
     public votingSystem() {
-        Frame = new JFrame("Voting System test");
+        Frame = new JFrame("Voting System putangina");
         Frame.setSize(960, 540);
         Frame.setResizable(false);
         Frame.setLocationRelativeTo(null);
