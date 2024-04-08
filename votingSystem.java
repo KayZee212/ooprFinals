@@ -9,10 +9,10 @@ public class votingSystem {
     private Panel home;
 
     public votingSystem() {
-        Frame = new JFrame("Voting System ni kurt miguel bautista");
-        Frame.setSize(960, 540);
+        Frame = new JFrame("Voting System");
+        Frame.setSize(1000, 600); //dimensions
         Frame.setResizable(false);
-        Frame.setLocationRelativeTo(null);
+        Frame.setLocationRelativeTo(null); //puts frame to middle of screen
         Frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Label = new Label("");
         Label.setBounds(220, 0, 170, 50);
