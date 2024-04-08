@@ -9,7 +9,7 @@ public class votingSystem {
     private Panel home;
 
     public votingSystem() {
-        Frame = new JFrame("Voting System ni issai bautista");
+        Frame = new JFrame("Voting System ni sdoaij bautista");
         Frame.setSize(960, 540);
         Frame.setResizable(false);
         Frame.setLocationRelativeTo(null);
