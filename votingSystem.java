@@ -5,8 +5,9 @@ import java.awt.event.*;
 public class votingSystem {
 
     private JFrame Frame;
-    private Label Label;
+    private Label sideBarLabel1;
     private Panel home;
+    private Button vote;
 
     public votingSystem() {
         Frame = new JFrame("Voting System");
@@ -14,22 +15,38 @@ public class votingSystem {
         Frame.setResizable(false);
         Frame.setLocationRelativeTo(null); //puts frame to middle of screen
         Frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Label = new Label("");
-        Label.setBounds(220, 0, 170, 50);
+        Frame.setLayout(null);
+
+
+
+        // labels
+        sideBarLabel1 = new Label("Voting");
+        sideBarLabel1.setBounds(10, 10, 220, 50);
+        sideBarLabel1.setFont(new Font("Verdana", Font.PLAIN, 34));
+
+        // button box
+        vote = new Button("Vote");
+        vote.setBounds(890, 515, 90, 40);
+        vote.setFont(new Font("Verdana", Font.PLAIN, 28));
+
 
         // panel
         home = new Panel();
         home.setLayout(null);
-        home.add(Label);
-        Frame.add(home);
+        Frame.add(home); // this stays here
+        Frame.add(sideBarLabel1);
+        Frame.add(vote);
         Frame.setVisible(true);
+
     }
 
     public void showResult() {
     }
 
     public static void main(String[] args) {
+
         votingSystem vs = new votingSystem();
         vs.showResult();
+
     }
 }
