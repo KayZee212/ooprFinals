@@ -6,7 +6,7 @@ public class votingSystem {
 
     private JFrame Frame;
     private Label sideBarLabel1, sideBarLabel2;
-    private Panel home;
+    private Panel sideBar;
     private Button vote;
 
     public votingSystem() {
@@ -19,21 +19,22 @@ public class votingSystem {
 
         // labels
         sideBarLabel1 = new Label("Voting");
-        sideBarLabel1.setBounds(10, 10, 220, 30);
-        sideBarLabel1.setFont(new Font("Verdana", Font.BOLD, 26));
+        sideBarLabel1.setBounds(10, 10, 220, 35);
+        sideBarLabel1.setFont(new Font("Bahnschrift", Font.PLAIN, 28));
 
         sideBarLabel2 = new Label("System");
-        sideBarLabel2.setBounds(10, 40, 220, 30);
-        sideBarLabel2.setFont(new Font("Verdana", Font.BOLD, 26));
+        sideBarLabel2.setBounds(10, 40, 220, 35);
+        sideBarLabel2.setFont(new Font("Bahnschrift", Font.PLAIN, 28));
+        
         // button box
         vote = new Button("Vote");
-        vote.setBounds(890, 515, 90, 40);
-        vote.setFont(new Font("Verdana", Font.PLAIN, 28));
+        vote.setBounds(890, 515, 90, 35);
+        vote.setFont(new Font("Bahnschrift", Font.PLAIN, 28));
 
         // panel
-        home = new Panel();
-        home.setLayout(null);
-        Frame.add(home); // this stays here
+        sideBar = new Panel();
+        sideBar.setLayout(null);
+        Frame.add(sideBar); // this is a panel
         Frame.add(sideBarLabel1);
         Frame.add(sideBarLabel2);
         Frame.add(vote);
