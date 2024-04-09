@@ -9,7 +9,7 @@ public class votingSystem {
     private Panel home;
 
     public votingSystem() {
-        Frame = new JFrame("Miguel System");
+        Frame = new JFrame("Voting System");
         Frame.setSize(1000, 600); //dimensions
         Frame.setResizable(false);
         Frame.setLocationRelativeTo(null); //puts frame to middle of screen
